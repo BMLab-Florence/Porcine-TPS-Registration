@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "porcine-tps-registration"
+version = "0.1.0"
+description = "Desktop application for landmark-based restoration of cleared cardiac tissue slices"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "numpy>=1.26,<3",
+    "opencv-python-headless>=4.8,<6",
+    "PySide6>=6.6,<7",
+]
+
+[project.scripts]
+porcine-tps = "porcine_tps.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["porcine_tps*"]

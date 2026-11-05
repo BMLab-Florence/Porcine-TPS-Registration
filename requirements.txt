@@ -1,0 +1,5 @@
+# Install the desktop app with: python -m pip install -e .
+# Kept in sync with pyproject.toml for users preferring pip requirements.
+numpy>=1.26,<3
+opencv-python-headless>=4.8,<6
+PySide6>=6.6,<7
